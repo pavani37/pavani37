@@ -1,8 +1,9 @@
-public class Ex5{
+class Ex5{
+    
     public static void main(String args[]){
-        int i=1;
-       while(i<=10){
-           System.out.println("Hello");
-          }
- }
+ 
+          int arr[]={34,44,89,22,11};
+          
+          System.out.println(arr[5]);
+    }
 }

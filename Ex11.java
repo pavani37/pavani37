@@ -1,12 +1,20 @@
-public class Ex11{
+class Ex11{
+    
     public static void main(String args[]){
-        int i=1;
-        while(i<=10){
-             i++;
-            if(i==5){
-                continue;
-            }
-             System.out.print(i+" ");
-           }
-}
+ 
+          try{
+              System.out.println(10/2);
+              try{
+                  System.out.println(10/0);
+              }
+              catch(Exception e){
+                  System.out.println(10/0);
+              }
+          }
+          catch(ArithmeticException e){
+              System.out.println("outer catch");
+          }
+          System.out.println("Bye");
+          
+    }
 }

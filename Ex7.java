@@ -1,15 +1,21 @@
-public class Ex7{
+class Ex7{
+    
     public static void main(String args[]){
-        int i=1;
-       while(i<=10){
-          if(i==6){  
-           System.out.println("Hello");
+ 
+          try{
+             String str=null;
+             
+             int l=str.length();
           }
-          else{
-              System.out.println("Bye");
+          catch(ArithmeticException e){
+             System.out.println("AE");   
           }
-          i++;
-       }
-        
+          catch(NumberFormatException e1){
+             System.out.println("NFE");   
+          }
+          catch(Exception e){
+              System.out.println("Exception");
+          }
+          
     }
 }

@@ -1,10 +1,13 @@
-public class Ex1{
+class Ex1{
+    
     public static void main(String args[]){
-        int i=1;
-        do{
-            System.out.print(i+"  "); 
-            i++;
-        }
-        while(i<=10);
-        }
+ 
+     System.out.println("Hi");
+     System.out.println("Hi");
+     System.out.println(10/0);
+     System.out.println("hello");
+     System.out.println("hello");
+     
+        
     }
+}

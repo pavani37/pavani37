@@ -1,10 +1,15 @@
-public class Ex14{
+class Ex14{
+    
     public static void main(String args[]){
-      int a=90;
-          a=67; 
-          a=66;
-      System.out.println(a);
-      a=77;
-      System.out.println(a);
+              
+              int age=12;
+              
+              if(age<18){
+                  throw new ArithmeticException("Not Eligible for vote");
+              }
+              else{
+                  System.out.println("Eligible for vote");
+              }
+              
     }
 }

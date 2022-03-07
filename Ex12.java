@@ -1,12 +1,17 @@
-public class Ex12{
+class Ex12{
+    
     public static void main(String args[]){
-        int i=1;
-        while(i<=10){
-             i++;
-            if(i==5 || i==7) {
-                continue;
-            }
-             System.out.print(i+" ");
-        }
+ 
+          try{
+          
+              System.out.println(10/2);
+          }
+          catch(Exception e){
+              System.out.println("Catch block");
+          }
+          finally{
+              System.out.println("Finally");
+             }
+        System.out.println("Bye");
     }
 }

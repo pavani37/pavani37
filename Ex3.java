@@ -1,10 +1,12 @@
-public class Ex3{
+class Ex3{
+    
     public static void main(String args[]){
-        if(false){                            
-           System.out.println("Hi");
-       }
-       else{
-           System.out.println("Bye");
-       }
+ 
+            String str=null;
+            
+            System.out.println(str.length());
+     
+        
     }
 }
+

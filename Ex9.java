@@ -1,16 +1,20 @@
-public class Ex9{
+class Ex9{
+    
     public static void main(String args[]){
-        int i=1;
-       while(i<=10){
-          if(i==2){  
-           System.out.println("Hello");
+ 
+          try{
+              System.out.println("outer try");
+              try{
+                  System.out.println(10/2);
+              }
+              catch(Exception e){
+                  System.out.println("inner catch");
+              }
           }
-          else{
-              System.out.println("Bye");
+          catch(ArithmeticException e){
+              System.out.println("outer catch");
           }
-           i++;
-          break;
-         
-       }
+          System.out.println("Bye");
+          
     }
 }

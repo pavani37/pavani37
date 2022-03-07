@@ -1,14 +1,20 @@
-public class Ex10{
+class Ex10{
+    
     public static void main(String args[]){
-        int i=1;
-       while(i<=10){
-          if(i==5){
-              System.out.println(i);
-              continue;
+ 
+          try{
+              System.out.println(10/0);
+              try{
+                  System.out.println(10/2);
+              }
+              catch(Exception e){
+                  System.out.println("inner catch");
+              }
           }
-          System.out.println(i);
+          catch(ArithmeticException e){
+              System.out.println("outer catch");
+          }
+          System.out.println("Bye");
           
-         
-       }
     }
 }

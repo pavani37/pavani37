@@ -1,7 +1,9 @@
-public class Ex4{
+class Ex4{
+    
     public static void main(String args[]){
-        while(true){
-           System.out.println("Hello");
-       }
+ 
+          String str="abc123";
+          
+          int a=Integer.parseInt(str);
     }
 }

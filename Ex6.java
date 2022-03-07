@@ -1,9 +1,12 @@
-public class Ex6{
+class Ex6{
+    
     public static void main(String args[]){
-        int i=1;
-       while(i<=10){
-              System.out.println("Hello");
-           break;
-          }
-        }
+ 
+          int arr[]=new int[3];
+          
+         for(int i=0;i<=3;i++){
+             
+             arr[i]=100;
+         }
+    }
 }

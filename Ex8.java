@@ -1,16 +1,20 @@
-public class Ex8{
+class Ex8{
+    
     public static void main(String args[]){
-        int i=1;
-       while(i<=10){
-          if(i==6){  
-           System.out.println("Hello");
-           break;
+ 
+          try{
+              System.out.println("outer try");
+              try{
+                  System.out.println(10/0);
+              }
+              catch(Exception e){
+                  System.out.println("inner catch");
+              }
           }
-          else{
-              System.out.println("Bye");
+          catch(ArithmeticException e){
+              System.out.println("outer catch");
           }
-          i++;
-       }
-        
-}
+          System.out.println("Bye");
+          
+    }
 }
